@@ -1,0 +1,19 @@
+{
+
+  "manifest_version": 2,
+  "name": "Hide BMO Announcements",
+  "version": "1.0",
+
+  "description": "Hides announcements on bugzilla.mozilla.org",
+
+  "icons": {
+    "48": "icons/eye-off-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://bugzilla.mozilla.org/*"],
+      "js": ["remove.js"]
+    }
+  ]
+}
